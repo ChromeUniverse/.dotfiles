@@ -108,7 +108,7 @@ bindsym $mod+a focus parent
 set $ws1 "1: Terminal"
 set $ws2 "2: Firefox"
 set $ws3 "3: Files"
-set $ws4 "4"
+set $ws4 "4: Atom Editor"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -151,6 +151,9 @@ assign [class="Firefox"] $ws2
 
 # opening Nautilus on WS3
 assign [class="Org.gnome.Nautilus"] $ws3
+
+# opening Atom Editor on WS4
+assign [class="Atom"] $ws4
 
 # opening RhythmBox on WS10
 assign [class="Rhythmbox"] $ws10
@@ -199,6 +202,8 @@ bar {
 }
 
 bindsym $mod+shift+x exec i3lock
+
+#----------------------------------------------------------------------
 
 # set the VM scrren to an acceptable screen resolution
 exec_always xrandr --output Virtual1 --mode 1680x1050
